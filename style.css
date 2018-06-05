@@ -1,0 +1,68 @@
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+}
+
+body { margin: 0; }
+.max-width {max-width: 1400px; margin: 0 auto;}
+.site-container, .post-title, footer, header { position: relative; margin: .5em; }
+.left-column, .right-column,.post-title, footer, header {  border: 1px solid #ccc; padding: 1.25em; }
+.left-column { margin-bottom: .5em; }
+.floating-inline{display: inline-block;vertical-align: middle;}
+.nav {
+  list-style: none;
+  margin-left: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.nav > li,
+.nav > li > a {
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+  text-decoration: none;
+}
+.inline-items {
+  margin-top: 0;
+}
+.inline-items li {
+  margin-left: 0;
+  border-left: 1px solid black;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.inline-items li:first-child {
+  margin-left: 0;
+  border: none;
+  padding-left: 0;
+  padding-right: 10px;
+}
+.inline-items li:last-child {
+  padding-right: 0;
+}
+.snippet-box {
+    border: 1px solid #ccc;
+    max-width: 32%;
+    display: inline-block;
+}
+.hundred{
+    width:100%;
+}
+.snippet-text {
+    padding: 8px 8px;
+}
+.unbullet {
+    list-style-type: none;
+}
+
+/* MEDIA QUERIES */
+@media screen and (min-width: 47.5em ) {
+  .left-column { 
+    margin-right: 22.5em; 
+  }
+  .right-column { 
+    position: absolute; 
+    top: 0; 
+    right: 0; 
+    width: 21.75em; 
+  }
+}
